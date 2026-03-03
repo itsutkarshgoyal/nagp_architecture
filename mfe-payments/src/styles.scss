@@ -1,0 +1,88 @@
+.payments-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 8px 20px rgba(50, 130, 184, 0.12);
+  max-width: 520px;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #0f4c75;
+  }
+
+  .policy-summary {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: #f0f4ff;
+    margin-bottom: 1.25rem;
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    p {
+      margin: 0.1rem 0;
+      font-size: 0.85rem;
+    }
+  }
+
+  .payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.85rem;
+      color: #1b262c;
+    }
+
+    input {
+      margin-top: 0.25rem;
+      padding: 0.4rem 0.55rem;
+      border-radius: 0.4rem;
+      border: 1px solid #cbd5e1;
+      font-size: 0.9rem;
+    }
+
+    button {
+      margin-top: 0.5rem;
+      padding: 0.55rem 0.9rem;
+      border-radius: 999px;
+      border: none;
+      background: #3282b8;
+      color: #ffffff;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:disabled {
+        background: #94a3b8;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .payment-message {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .schedule {
+    h3 {
+      margin-top: 0;
+      font-size: 0.95rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0;
+      font-size: 0.85rem;
+    }
+  }
+}
+

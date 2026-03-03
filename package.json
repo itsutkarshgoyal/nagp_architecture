@@ -1,0 +1,35 @@
+{
+  "name": "client-side-architecture-assignment",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start:container": "cd container && webpack serve --mode development",
+    "start:policies": "cd mfe-policies && webpack serve --mode development",
+    "start:payments": "cd mfe-payments && webpack serve --mode development",
+    "build:container": "cd container && webpack --mode production",
+    "build:policies": "cd mfe-policies && webpack --mode production",
+    "build:payments": "cd mfe-payments && webpack --mode production",
+    "build:all": "npm run build:container && npm run build:policies && npm run build:payments"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/webpack-env": "^1.18.5",
+    "typescript": "^5.6.3",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "html-webpack-plugin": "^5.6.0",
+    "sass": "^1.77.0",
+    "sass-loader": "^14.2.1",
+    "css-loader": "^7.1.1",
+    "style-loader": "^4.0.0"
+  }
+}
