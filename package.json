@@ -3,12 +3,12 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "start:container": "cd container && webpack serve --mode development",
-    "start:policies": "cd mfe-policies && webpack serve --mode development",
-    "start:payments": "cd mfe-payments && webpack serve --mode development",
-    "build:container": "cd container && webpack --mode production",
-    "build:policies": "cd mfe-policies && webpack --mode production",
-    "build:payments": "cd mfe-payments && webpack --mode production",
+    "start:container": "npx webpack serve --config container/webpack.config.js --mode development",
+    "start:policies": "npx webpack serve --config mfe-policies/webpack.config.js --mode development",
+    "start:payments": "npx webpack serve --config mfe-payments/webpack.config.js --mode development",
+    "build:container": "npx webpack --config container/webpack.config.js --mode production",
+    "build:policies": "npx webpack --config mfe-policies/webpack.config.js --mode production",
+    "build:payments": "npx webpack --config mfe-payments/webpack.config.js --mode production",
     "build:all": "npm run build:container && npm run build:policies && npm run build:payments"
   },
   "dependencies": {
