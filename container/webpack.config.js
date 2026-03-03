@@ -35,8 +35,8 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "container",
       remotes: {
-        policiesApp: "policiesApp@http://localhost:3001/remoteEntry.js",
-        paymentsApp: "paymentsApp@http://localhost:3002/remoteEntry.js"
+        policiesApp: "policiesApp@https://mfe-policies.netlify.app/remoteEntry.js",
+        paymentsApp: "paymentsApp@https://mfe-payments.netlify.app/remoteEntry.js"
       },
       shared: {
         react: { singleton: true, eager: true, requiredVersion: false },
