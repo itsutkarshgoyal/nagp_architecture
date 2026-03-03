@@ -10,7 +10,6 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
     publicPath: process.env.WEBPACK_SERVE ? "http://localhost:3001/" : "auto",
-    crossOriginLoading: "anonymous",
     clean: true
   },
   mode: "development",
